@@ -7,8 +7,8 @@ This example utilizes the [next-apollo](https://www.npmjs.com/package/next-apoll
 Install it and run
 
 ```bash
-npm install
-npm run dev
+npm install / yarn install
+npm run dev / yarn run dev
 ```
 
 ## The idea behind the example
