@@ -1,41 +1,28 @@
-import Main from '../lib/layout'
-import Header from '../components/Header'
+import Main from "../lib/layout";
+import Header from "../components/Header";
 
 export default props => (
   <Main>
     <Header />
     <article>
-      <h1>The Idea Behind This Example</h1>
+      <h1>Idea behind test case</h1>
       <p>
-        <a href="http://dev.apollodata.com">Apollo</a> is a GraphQL client that
-        allows you to easily query the exact data you need from a GraphQL
-        server. In addition to fetching and mutating data, Apollo analyzes your
-        queries and their results to construct a client-side cache of your data,
-        which is kept up to date as further queries and mutations are run,
-        fetching more results from the server.
+        This web application is intended to convert currencies, by getting
+        current currency quotes. Unfortunatly there are some limitations to the
+        free tier of the GraphQL backend server (https://swop.cx/). Only the
+        base currency of EUR is permitted to convert against other currencies.
       </p>
       <p>
-        In this simple example, we integrate Apollo seamlessly with{' '}
+        In this simple example, we integrate Apollo seamlessly with{" "}
         <a href="https://github.com/zeit/next.js">Next</a> by wrapping our pages
-        inside a{' '}
+        inside a{" "}
         <a href="https://facebook.github.io/react/docs/higher-order-components.html">
           higher-order component (HOC)
-        </a>. Using the HOC pattern we're able to pass down a central store of
-        query result data created by Apollo into our React component hierarchy
-        defined inside each page of our Next application.
-      </p>
-      <p>
-        On initial page load, while on the server and inside getInitialProps, we
-        invoke the Apollo method,{' '}
-        <a href="http://dev.apollodata.com/react/server-side-rendering.html#getDataFromTree">
-          getDataFromTree
-        </a>. This method returns a promise; at the point in which the promise
-        resolves, our Apollo Client store is completely initialized.
-      </p>
-      <p>
-        This example relies on <a href="http://graph.cool">graph.cool</a> for
-        its GraphQL backend.
+        </a>
+        . Using the HOC pattern we're able to pass down a central store of query
+        result data created by Apollo into our React component hierarchy defined
+        inside each page of our Next application.
       </p>
     </article>
   </Main>
-)
+);

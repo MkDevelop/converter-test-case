@@ -11,6 +11,18 @@ export const H1 = styled("h1")({
 });
 
 export const Input = styled("input")({
-  display: "block",
-  marginBottom: "10px"
+  display: "block"
+});
+
+export const Select = styled("select")({
+  display: "block"
+});
+
+export const Option = styled("option")({
+  display: "block"
+});
+
+export const Container = styled("div")({
+  display: "flex",
+  height: "50px"
 });
